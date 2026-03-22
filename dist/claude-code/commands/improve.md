@@ -46,46 +46,9 @@ Save both reports for reference. Do not fix anything yet.
 
 This is the core of the skill. Map every finding to the right fix.
 
-1. Read both the audit and critique reports
-2. Map each finding to an Impeccable command using this table:
+**Recommendation Loop:** See [_recommendation-loop.md](./_recommendation-loop.md) for the shared engine — finding-to-command mapping, synthesis logic, and presentation format.
 
-| Finding Category | Command | What It Does |
-|-----------------|---------|--------------|
-| Typography issues (scale, hierarchy, line-height, font pairing) | `/typeset` | Fix type scale and font relationships |
-| Color/contrast issues (palette, contrast ratios, color harmony) | `/colorize` | Rebuild or adjust color system |
-| Layout/spacing issues (alignment, grid, whitespace, padding) | `/arrange` | Fix spatial relationships and layout structure |
-| Too bland, safe, or generic | `/bolder` | Push the design toward more confident choices |
-| Too noisy, aggressive, or cluttered | `/quieter` | Reduce visual noise and create breathing room |
-| Motion/animation gaps (no transitions, static interactions) | `/animate` | Add purposeful motion and micro-interactions |
-| Copy/label clarity (confusing labels, vague CTAs, jargon) | `/clarify` | Rewrite UI text for clarity and action |
-| Over-engineered (too many elements, unnecessary complexity) | `/distill` | Strip to essentials, remove what doesn't earn its place |
-| Error handling/edge cases (empty states, loading, failures) | `/harden` | Add resilience for real-world conditions |
-| Performance issues (heavy assets, render blocking, layout shifts) | `/optimize` | Fix performance bottlenecks |
-| Responsive breakpoints (broken on mobile/tablet, missing queries) | `/adapt` | Fix responsive behavior across viewports |
-| Missing delight/personality (functional but forgettable) | `/delight` | Add moments of personality without sacrificing clarity |
-| Design system inconsistency (mixed patterns, one-off styles) | `/normalize` | Align to a consistent component/token system |
-| Onboarding/empty states (no guidance, blank screens, cold starts) | `/onboard` | Design first-run and empty-state experiences |
-| Technically ambitious effects (3D, shaders, advanced CSS, scroll-driven) | `/overdrive` | Push technical boundaries for standout moments |
-
-3. Group findings by command — if three issues all need `/typeset`, they become one item
-4. Order by severity: critical issues first, polish last
-5. Present the recommendation list to the user:
-
-```
-## Recommended Fixes (from audit + critique)
-
-1. /typeset — 3 issues: heading scale inconsistent, body line-height too tight, font weights not differentiated
-2. /colorize — 2 issues: CTA contrast below 4.5:1, secondary palette muddy against background
-3. /arrange — 1 issue: card grid breaks at tablet widths, uneven gutter spacing
-
-Run all? Or select which to apply (e.g., "1 and 3", "skip 2"):
-```
-
-6. Wait for user input:
-   - **"all"** or **"run all"**: Execute every recommendation
-   - **Specific numbers** (e.g., "1, 3"): Execute only those
-   - **"skip"**: Skip to Phase 3
-   - **Custom instructions**: User may adjust scope or add context — respect it
+Follow all steps in the recommendation loop. When the user selects fixes, proceed to Phase 2.
 
 ## Phase 2: Fix
 

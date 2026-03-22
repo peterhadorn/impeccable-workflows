@@ -146,24 +146,9 @@ The user can always override a skip by typing the command name.
 
 ### Finding-to-Category Mapping
 
-| Step | Command | Audit/Critique Category |
-|------|---------|------------------------|
-| 1 | `/distill` | Over-engineered, unnecessary complexity |
-| 2 | `/arrange` | Layout/spacing issues |
-| 3 | `/typeset` | Typography issues |
-| 4 | `/colorize` | Color/contrast issues |
-| 5 | `/normalize` | Design system inconsistency |
-| 6 | `/clarify` | Copy/label clarity |
-| 7 | `/onboard` | Onboarding/empty states |
-| 8 | `/harden` | Error handling/edge cases |
-| 9 | `/adapt` | Responsive breakpoints |
-| 10 | `/optimize` | Performance issues |
-| 11 | `/animate` | Motion/animation gaps |
-| 12 | `/delight` | Missing delight/personality |
-| 13 | `/bolder` | Too bland/safe |
-| 13 | `/quieter` | Too noisy/aggressive |
-| 14 | `/overdrive` | Technically ambitious effects |
-| 15 | `/polish` | ALWAYS runs — never skipped |
+**Recommendation Loop:** See [_recommendation-loop.md](./_recommendation-loop.md) for the shared engine — finding-to-command mapping, synthesis logic, and presentation format.
+
+Use that mapping to determine which categories have findings. Additional rule for full-treatment: **Step 15 (`/polish`) ALWAYS runs — never skipped.**
 
 ### Step 13 Special Handling
 

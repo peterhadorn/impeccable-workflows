@@ -1,13 +1,20 @@
 ---
 name: prospect-audit
-description: "Audit any website and generate a business-language sales brief with specific findings and talking points"
+description: "Audit any website and generate a business-language analysis with specific findings and actionable recommendations"
 ---
 
-# /prospect-audit -- Sales Intelligence from Any URL
+# /prospect-audit -- Website Analysis for Business Decisions
 
 **Scope:** This skill is READ-ONLY. It never edits code, modifies files on the target site, or deploys anything. It produces a single analysis document.
 
 **Usage:** `/prospect-audit [url]`
+
+## Use Cases
+
+- **Sales prospecting** -- Analyze a prospect's site before cold outreach. The brief gives you specific talking points no generic email could have.
+- **Self-audit** -- Point it at your own site. The business-language framing helps you see your site through your customers' eyes, not a developer's.
+- **Client reporting** -- Run it on a client's site before or after a project. "Here's what we found" or "Here's what we fixed."
+- **Competitive analysis** -- Audit a competitor's site to understand their strengths and weaknesses.
 
 ---
 
@@ -42,6 +49,8 @@ Before running `/audit` or `/critique`, check if `.impeccable.md` exists at the 
 
 1. Run `/audit` -- captures layout, accessibility, performance, and standards compliance.
 2. Run `/critique` -- captures design quality, visual hierarchy, and UX issues.
+
+**Recommendation Loop:** See [_recommendation-loop.md](./_recommendation-loop.md) for the shared engine — finding-to-command mapping, synthesis logic, and presentation format. In prospect-audit, this mapping is used to categorize findings for the sales brief, NOT to run fixes.
 
 ### Gather additional signals via Playwright
 
