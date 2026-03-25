@@ -1,12 +1,8 @@
-# Impeccable Workflows
+# Web Design Agency Skills
 
-Orchestration layer for [Impeccable](https://github.com/pbakaus/impeccable). Chains Impeccable's 20 design commands into structured workflows with a shared recommendation engine.
+Two Claude Code skills for web design agencies. Audit any website and get a client-ready sales brief, or run a targeted improvement loop that diagnoses, recommends, and fixes design issues.
 
-## What This Is
-
-Impeccable gives you 20 design commands (`/audit`, `/critique`, `/typeset`, `/colorize`, etc.). These workflows handle the orchestration: which commands to run, in what order, how to synthesize findings, and how to present results.
-
-Two self-contained skills. Plain Markdown — no runtime, no dependencies.
+Built on [Impeccable](https://github.com/pbakaus/impeccable)'s 20 design commands — these skills handle the orchestration: which commands to run, in what order, and how to translate findings into language clients actually understand.
 
 ## Skills
 
