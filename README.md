@@ -99,39 +99,6 @@ Real `/prospect-audit` output from live websites:
 cp -r dist/claude-code/commands/* ~/.claude/commands/
 ```
 
-## Multi-Surface Context
-
-Impeccable reads `.impeccable.md` at the project root for design context. If your project has multiple design surfaces (marketing site, dashboard, docs), maintain separate context files and swap before running commands.
-
-```
-config/
-  marketing.impeccable.md
-  dashboard.impeccable.md
-  docs.impeccable.md
-```
-
-```bash
-cp config/dashboard.impeccable.md .impeccable.md
-# Now all commands run with dashboard context
-```
-
-Add `.impeccable.md` to `.gitignore` — it's a transient working file.
-
-See [docs/CONTEXT-SWAP.md](docs/CONTEXT-SWAP.md) for details.
-
-## Example Contexts
-
-Pre-built `.impeccable.md` templates in `config/examples/`:
-
-| Template | For |
-|----------|-----|
-| `saas-dashboard.md` | Data-dense admin panels |
-| `marketing-site.md` | Landing pages, hero sections |
-| `docs-site.md` | Technical documentation |
-| `ecommerce.md` | Product pages, checkout flows |
-
-Run `/teach-impeccable` on your actual pages for a tailored context, or start from these templates.
-
 ## Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
@@ -144,6 +111,8 @@ Run `/teach-impeccable` on your actual pages for a tailored context, or start fr
 | **Chrome DevTools** | Controls your real browser — sees cookies, geo content, logged-in states | `claude plugin add superpowers-chrome` |
 
 The skills will detect available browser tools on first run and guide you through setup if needed.
+
+**Optional but recommended:** Run `/teach-impeccable` once per project to create a `.impeccable.md` design context file. This gives Impeccable your brand, audience, and aesthetic direction — audits and fixes become more relevant. The skills work without it, but results are better with it.
 
 ## How It Works
 

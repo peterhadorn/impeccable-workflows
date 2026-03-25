@@ -51,7 +51,7 @@ Install one or both, then re-run /prospect-audit.
 
 ## Step 1: Context
 
-Check `.impeccable.md` at project root. If missing, run `/teach-impeccable` first or copy from `config/examples/`.
+Check `.impeccable.md` at project root. If missing, run `/teach-impeccable` first.
 
 ## Step 2: Load & Diagnose
 
