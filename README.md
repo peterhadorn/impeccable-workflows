@@ -92,11 +92,15 @@ Real `/prospect-audit` output from live websites:
 
 ## Installation
 
-### Claude Code
-
 ```bash
-cp -r dist/claude-code/commands/* ~/.claude/commands/
+# Global (all projects)
+git clone https://github.com/peterhadorn/webdesign-agency-skills.git && cp -r webdesign-agency-skills/dist/claude-code/commands/* ~/.claude/commands/ && rm -rf webdesign-agency-skills
+
+# Project-specific
+git clone https://github.com/peterhadorn/webdesign-agency-skills.git && cp -r webdesign-agency-skills/dist/claude-code/commands/* .claude/commands/ && rm -rf webdesign-agency-skills
 ```
+
+Or just tell Claude Code: "Clone peterhadorn/webdesign-agency-skills and copy the skills to my commands folder."
 
 ## Requirements
 
