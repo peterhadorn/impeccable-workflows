@@ -85,9 +85,9 @@ Real `/prospect-audit` output from live websites:
 |------|---------------|
 | [stripe.com](examples/stripe.md) | Enterprise SaaS, strong brand, accessibility gaps |
 | [craigslist.org](examples/craigslist.md) | Famously minimal, dated design vs. deliberate simplicity |
-| [webevolve.ch](examples/webevolve.md) | Self-audit, testing the tool on our own site |
 | [spacex.com](examples/spacex.md) | Visual-first brand, hidden navigation, no contact path |
 | [subway.com](examples/subway.md) | Fast food chain, promotion overload, decision fatigue |
+| [ubs.com](examples/ubs.md) | Global wealth management, brochure homepage, broken icon fonts |
 | [wellsfargo.com](examples/wellsfargo.md) | Banking, competing priorities, new vs. existing customers |
 
 ## Installation
